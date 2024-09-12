@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assign 1</title>
+  </head>
+  <body>
+    <!-- التكليف 01 -->
+    <form action="test.py" method="POST">
+      <!-- Username Field -->
+      <label for="username">Username (إجباري)</label>
+      <br />
+      <input type="text" id="username" name="username" required placeholder="أدخل اسم المستخدم الخاص بك" />
+      <p>نصيحة: أدخل اسم المستخدم الذي تود استخدامه، يجب أن يكون فريدًا.</p>
+      <hr />
+      <!-- Password Field -->
+      <label for="password">Password</label>
+      <br />
+      <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور الخاصة بك" />
+      <p>نصيحة: استخدم كلمة مرور قوية تحتوي على أحرف وأرقام ورموز.</p>
+      <hr />
+      <!-- Mobile Field -->
+      <label for="mobile">Mobile</label>
+      <br />
+      <input type="tel" id="mobile" name="mobile" pattern="^\+20100 \(\d{3}\) \d{3}$" placeholder="+20100 (234) 123" />
+      <p>نصيحة: أدخل رقم هاتفك بصيغة صحيحة مثل +20100 (234) 123.</p>
+      <hr />
+      <!-- Email Field -->
+      <label for="email">Email (إجباري)</label>
+      <br />
+      <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني" />
+      <p>نصيحة: تأكد من إدخال بريد إلكتروني صالح لتلقي الإشعارات.</p>
+      <hr />
+      <!-- Subject Field -->
+      <label for="subject">Subject</label>
+      <br />
+      <input type="text" id="subject" name="subject" placeholder="أدخل الموضوع الخاص بك" />
+      <p>نصيحة: اكتب الموضوع الذي تود التحدث عنه أو الاستفسار بخصوصه.</p>
+      <hr />
+      <!-- Hidden Field -->
+      <input type="hidden" name="hiddenField" value="12345" />
+      <!-- Buttons -->
+      <button type="reset">Empty Form</button>
+      <button type="submit">Send Data</button>
+    </form>
+  </body>
+</html>
