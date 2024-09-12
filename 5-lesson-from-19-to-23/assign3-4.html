@@ -3,10 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Assigns 3, 4</title>
   </head>
   <body>
     <!-- التكليف 03 -->
-    <audio></audio>
+    <audio controls autoplay loop>
+      <source src="audio-file.mp3" type="audio/mpeg" />
+      <source src="audio-file.wav" type="audio/wav" />
+      <source src="audio-file.ogg" type="audio/ogg" />
+      متصفحك لا يدعم تشغيل الملفات الصوتية.
+    </audio>
+    <!-- التكليف 04 -->
+    <video controls width="400" muted poster="poster-image.jpg">
+      <source src="video-file.mp4" type="video/mp4" />
+      <source src="video-file.webm" type="video/webm" />
+      <source src="video-file.ogv" type="video/ogg" />
+      <!-- الترجمة باللغة العربية -->
+      <track src="captions-ar.vtt" kind="subtitles" srclang="ar" label="العربية" />
+      <!-- الترجمة باللغة الإنجليزية -->
+      <track src="captions-en.vtt" kind="subtitles" srclang="en" label="English" />
+      متصفحك لا يدعم تشغيل ملفات الفيديو.
+    </video>
   </body>
 </html>
