@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assign 1, 2, 3</title>
+  </head>
+  <body>
+    <!-- التكليف 01 -->
+    <form action="" method="get">
+      <!-- Token -->
+      <input type="text" name="Token" id="token" value="b92f1fc2fce391ad7af633723afd3055" hidden />
+      
+      <!-- Email -->
+      <label for="email">Email</label>
+      <br />
+      <input type="text" name="Email" id="email" value="o@o.com" readonly />
+      <hr />
+    
+      <!-- Username -->
+      <label for="username">Username (إجباري)</label>
+      <br />
+      <input type="text" name="Username" id="username" minlength="5" maxlength="20" required autofocus />
+      <hr />
+    
+      <!-- Skills (Checkbox) -->
+      <fieldset>
+        <legend>Skills (اختيارات متعددة)</legend>
+        <label>
+          <input type="checkbox" name="skills" value="Problem Solving" checked /> Problem Solving
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="skills" value="Logical Thinking" /> Logical Thinking
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="skills" value="Advanced Search" /> Advanced Search
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="skills" value="Analysis" /> Analysis
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="skills" value="Planning" /> Planning
+        </label>
+      </fieldset>
+      <hr />
+    
+      <!-- Job (Radio Buttons) -->
+      <fieldset>
+        <legend>Job (اختيار واحد)</legend>
+        <label>
+          <input type="radio" name="job" value="Front-End Developer" checked /> Front-End Developer
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="job" value="Back-End Developer" /> Back-End Developer
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="job" value="Business Analyst" /> Business Analyst
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="job" value="Project Manager" /> Project Manager
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="job" value="Scrum Master" /> Scrum Master
+        </label>
+      </fieldset>
+      <hr />
+    
+      <!-- Programming Languages (Select) -->
+      <label for="programming-language">Programming Language</label>
+      <br />
+      <select name="programming_language" id="programming-language" required>
+        <option value="Python 3.9">Python 3.9</option>
+        <option value="JavaScript ES6">JavaScript ES6</option>
+        <option value="Java 17">Java 17</option>
+        <option value="C# 10">C# 10</option>
+        <option value="Ruby 3.1">Ruby 3.1</option>
+        <option value="PHP 8.1">PHP 8.1</option>
+      </select>
+      <hr />
+    
+      <!-- Brief (Textarea) -->
+      <label for="brief">Why You Want To Learn Programming</label>
+      <br />
+      <textarea name="brief" id="brief" rows="10" cols="50">Write Here Why You Want To Learn Programming</textarea>
+      <hr />
+    
+      <!-- Empty -->
+      <button type="reset">Empty</button>
+      <!-- Send -->
+      <button type="submit">Send</button>
+    </form>
+    
+  </body>
+</html>
